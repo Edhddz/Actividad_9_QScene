@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>928</width>
+    <height>626</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_1">
+          <attribute name="title">
+           <string>Registro de Neuronas</string>
+          </attribute>
+          <widget class="QTableWidget" name="tableWidget">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>23</x>
+             <y>390</y>
+             <width>831</width>
+             <height>83</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="gridStyle">
+            <enum>Qt::SolidLine</enum>
+           </property>
+           <property name="rowCount">
+            <number>1</number>
+           </property>
+           <property name="columnCount">
+            <number>7</number>
+           </property>
+           <attribute name="horizontalHeaderMinimumSectionSize">
+            <number>17</number>
+           </attribute>
+           <row/>
+           <column>
+            <property name="text">
+             <string>ID</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Consolas</family>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Voltaje</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Consolas</family>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Posición X</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Consolas</family>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Posición Y</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Consolas</family>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Color(#) Red</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Consolas</family>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Color(#) Green</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Consolas</family>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Color(#) Blue</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Consolas</family>
+             </font>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item row="0" column="6">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+          </widget>
+          <widget class="QPushButton" name="LoadPushButton">
+           <property name="geometry">
+            <rect>
+             <x>734</x>
+             <y>218</y>
+             <width>120</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Cargar Neuronas</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="GLabel">
+           <property name="geometry">
+            <rect>
+             <x>166</x>
+             <y>156</y>
+             <width>8</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>G</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="Separator">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>218</y>
+             <width>150</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="ShowNPushButton">
+           <property name="geometry">
+            <rect>
+             <x>474</x>
+             <y>218</y>
+             <width>120</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Mostar Neuronas</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="WindowTitleLabel">
+           <property name="geometry">
+            <rect>
+             <x>474</x>
+             <y>32</y>
+             <width>380</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>236</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>REGISTRO DE NEURONAS</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="margin">
+            <number>-1</number>
+           </property>
+           <property name="indent">
+            <number>-1</number>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="EndInsertPushButton">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>251</y>
+             <width>150</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Insertar Al Final</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="RLabel">
+           <property name="geometry">
+            <rect>
+             <x>166</x>
+             <y>125</y>
+             <width>8</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>R</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="VoltLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>32</y>
+             <width>150</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="PosYLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>94</y>
+             <width>150</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="BLabel">
+           <property name="geometry">
+            <rect>
+             <x>166</x>
+             <y>187</y>
+             <width>8</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>B</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="XLabel">
+           <property name="geometry">
+            <rect>
+             <x>166</x>
+             <y>63</y>
+             <width>8</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>X</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="IDLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>1</y>
+             <width>150</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>ID:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="PosLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>63</y>
+             <width>150</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>Posicion:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="IDSearchLabel">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>305</y>
+             <width>282</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Ingresa el ID de la neurona a buscar:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="ColorLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>125</y>
+             <width>150</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>Color(#):</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="VoltLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>32</y>
+             <width>150</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>Voltaje:</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="PosXLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>63</y>
+             <width>150</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="SearchPushButton">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>358</y>
+             <width>282</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Buscar Neurona</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="CleanPushNutton">
+           <property name="geometry">
+            <rect>
+             <x>342</x>
+             <y>218</y>
+             <width>120</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Limpiar Campos</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="SavePushButton">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>218</y>
+             <width>128</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Respaldar Neuronas</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="ColorRLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>125</y>
+             <width>150</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="InserPushButton">
+           <property name="geometry">
+            <rect>
+             <x>342</x>
+             <y>250</y>
+             <width>120</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Insertar</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="ColorGLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>156</y>
+             <width>150</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="IDSearchLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>327</y>
+             <width>282</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>282</y>
+             <width>150</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="ColorBLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>187</y>
+             <width>150</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPlainTextEdit" name="InfoDisplay">
+           <property name="geometry">
+            <rect>
+             <x>474</x>
+             <y>63</y>
+             <width>380</width>
+             <height>149</height>
+            </rect>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="BegginInsertPushButton">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>219</y>
+             <width>150</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Insertar Al Inicio</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="IDLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>1</y>
+             <width>150</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="YLabel">
+           <property name="geometry">
+            <rect>
+             <x>166</x>
+             <y>94</y>
+             <width>8</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Y</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>Dibujar Neuronas</string>
+          </attribute>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>881</width>
+             <height>501</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0" colspan="2">
+             <widget class="QGraphicsView" name="graphicsView">
+              <property name="renderHints">
+               <set>QPainter::Antialiasing|QPainter::TextAntialiasing</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="LimpiarPanPushButton">
+              <property name="text">
+               <string>Limpiar Pantalla</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="DibujarNPushButton">
+              <property name="text">
+               <string>Dibujar Neuronas</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>928</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNeuronas">
+    <property name="title">
+     <string>Neuronas</string>
+    </property>
+   </widget>
+   <addaction name="menuNeuronas"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
